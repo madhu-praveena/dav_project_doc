@@ -142,8 +142,4 @@ The models are evaluated using the following performance metrics:
 - Recall
 - F1-score
 - ROC-AUC
-17. Project Team
-S. No.	Roll Number	Student Name
-1	2420030321	Madhu
-2	2420030572	Varda Parnavi
-3	2420030699	Hema
+
