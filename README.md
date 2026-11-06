@@ -1,145 +1,161 @@
 ChurnIQ – Customer Churn Prediction and Analytics Dashboard
-Project Domain: Data Analytics and Visualization
-Project Type: Web Application and Machine Learning
-Programming Languages: Python, JavaScript
-Technologies: HTML, CSS, JavaScript, Python, Pandas, NumPy, Scikit-learn, FastAPI
-1. Introduction
-ChurnIQ is a customer churn prediction and analytics dashboard designed to help businesses identify customers who are likely to discontinue their services.
+Project Overview
+ChurnIQ is a customer churn prediction and analytics dashboard developed to analyse customer behaviour and identify customers who are likely to discontinue a service.
 
-Customer churn is one of the major challenges faced by subscription-based businesses. Losing existing customers can negatively impact revenue, customer relationships, and business growth. Therefore, identifying customers who are likely to leave is important for developing effective customer-retention strategies.
+Customer churn is a significant challenge for subscription-based businesses, as losing existing customers can negatively affect revenue and long-term business growth. Identifying customers who are at risk of leaving helps businesses understand customer behaviour and develop effective retention strategies.
 
-ChurnIQ combines data analytics, interactive visualizations, and machine-learning techniques to analyse customer information and demonstrate how predictive analytics can support business decision-making.
-
-The application provides an interactive dashboard for exploring customer data, understanding churn patterns, and viewing customer risk information.
-2. Objectives
-The primary objectives of ChurnIQ are:
-1. To develop an interactive dashboard for customer churn analysis.
-2. To analyse customer characteristics and subscription behaviour.
-3. To identify patterns associated with customer churn.
-4. To perform data preprocessing and exploratory data analysis.
-5. To implement machine-learning classification algorithms.
-6. To evaluate and compare different machine-learning models.
-7. To develop a backend API for customer churn predictions.
-8. To present analytical results through an intuitive user interface.
-3. Features
-3.1 Customer Analytics Dashboard
-- Displays customer statistics and summary information.
-- Provides an overview of customer churn.
-- Displays customer records and risk categories.
-- Supports customer search and filtering.
-- Provides visual representations of customer analytics.
-3.2 Churn Prediction
-- Allows users to explore customer attributes.
-- Demonstrates churn probability estimation.
-- Categorizes customers into different risk levels.
-- Helps identify customers who may require retention strategies.
-3.3 Machine Learning
+ChurnIQ combines data analytics, interactive visualizations, and machine-learning techniques to demonstrate how customer data can be used to support data-driven business decisions.
+Objectives
+- Develop an interactive customer churn analytics dashboard.
+- Analyse customer characteristics and subscription behaviour.
+- Identify patterns associated with customer churn.
+- Perform data preprocessing and exploratory data analysis.
+- Implement and compare machine-learning classification algorithms.
+- Evaluate model performance using standard evaluation metrics.
+- Demonstrate customer churn prediction through a user-friendly interface.
+- Provide insights that can support customer-retention strategies.
+Key Features
+Customer Analytics Dashboard
+- Customer statistics and summary information.
+- Customer records and profile information.
+- Customer search and filtering.
+- Churn-related analytics and visualizations.
+- Customer risk categorization.
+Churn Prediction
+- Customer attribute analysis.
+- Demonstration of churn probability estimation.
+- Low, medium, and high-risk categorization.
+- Identification of customers who may require retention strategies.
+Machine Learning
 - Data preprocessing and cleaning.
 - Missing-value handling.
 - Feature encoding and scaling.
 - Logistic Regression classification.
 - Random Forest classification.
-- Model comparison using evaluation metrics.
-3.4 AI Copilot Demonstration
-- Provides an interactive chatbot-style interface.
-- Displays predefined responses related to customer analytics.
-- Helps users understand churn-related information.
-3.5 Data Export
-- Supports exporting customer records into CSV format.
-- Allows users to access customer information for further analysis.
-4. Technologies Used
-Frontend Technologies
-- HTML5
-- CSS3
-- JavaScript
-Backend Technologies
-- Python
-- FastAPI
-Data Analytics Libraries
-- Pandas
-- NumPy
-Machine Learning Libraries
-- Scikit-learn
-- Joblib
-Testing and Development Tools
-- Pytest
-- Git
-- GitHub
-- Visual Studio Code
-5. Project Architecture
-ChurnIQ consists of two major components: the frontend application and the Python backend.
+- Model comparison and evaluation.
+AI Copilot Demonstration
+- Interactive chatbot-style interface.
+- Predefined responses related to customer analytics.
+- Assistance in understanding churn-related information.
+Data Export
+- Export customer records in CSV format.
+- Access customer information for further analysis.
+Technology Stack
+Category	Technologies
+Frontend	HTML5, CSS3, JavaScript
+Backend	Python, FastAPI
+Data Processing	Pandas, NumPy
+Machine Learning	Scikit-learn
+Model Storage	Joblib
+Testing	Pytest
+Version Control	Git, GitHub
 
-Frontend: The frontend is developed using HTML, CSS, and JavaScript. It provides the user interface for displaying customer information, analytics, and demonstration churn predictions.
+Dataset Description
+The project uses a synthetically generated customer dataset containing 5,000 records.
 
-Backend: The backend is developed using Python and FastAPI. It handles dataset preprocessing, machine-learning model training, evaluation, and prediction requests.
-
-The overall workflow is:
-1. Customer dataset collection.
-2. Data preprocessing.
-3. Exploratory Data Analysis.
-4. Feature engineering.
-5. Machine-learning model training.
-6. Model evaluation.
-7. Customer churn prediction.
-8. Visualization and interpretation of results.
-6. Dataset Description
-The project includes a synthetically generated dataset containing 5,000 customer records.
-
-The dataset contains the following attributes:
+The dataset includes customer attributes such as:
 - Customer ID
 - Gender
 - Senior Citizen
-- Partner
-- Dependents
-- Tenure
+- Partner and Dependents
+- Customer Tenure
 - Phone Service
-- Multiple Lines
 - Internet Service
 - Online Security
 - Online Backup
 - Device Protection
-- Tech Support
-- Streaming TV
-- Streaming Movies
-- Contract
-- Paperless Billing
+- Technical Support
+- Streaming Services
+- Contract Type
 - Payment Method
 - Monthly Charges
 - Total Charges
-- Churn
+- Churn Status
 The target variable is Churn, which indicates whether a customer has discontinued the service.
-- Yes: Customer has churned.
-- No: Customer has not churned.
-The dataset is used to demonstrate customer behaviour analysis and machine-learning classification.
 
-Note: The included dataset is synthetically generated for academic demonstration purposes. It does not represent actual customer records.
-7. Data Preprocessing
-Data preprocessing is an important stage in the machine-learning workflow. It prepares raw customer information for analysis and model training.
+The dataset is used for demonstrating customer behaviour analysis, data preprocessing, and machine-learning classification.
 
-The following preprocessing techniques are implemented:
-1. Loading the customer dataset using Pandas.
-2. Handling missing values.
-3. Converting numerical columns into appropriate data types.
-4. Removing unnecessary identifier columns.
-5. Encoding categorical variables.
-6. Scaling numerical features.
-7. Separating input features and the target variable.
-8. Splitting the dataset into training and testing sets.
-8. Machine-Learning Algorithms
-Two classification algorithms are implemented and compared.
-8.1 Logistic Regression
-Logistic Regression is a supervised machine-learning algorithm used for binary classification problems. It estimates the probability of a customer belonging to a particular class.
+Note: The dataset is synthetically generated for academic and demonstration purposes. It does not contain actual customer records.
+Methodology
+The project follows a structured data analytics and machine-learning workflow.
+1. Data Collection – Loading the customer dataset.
+2. Data Preprocessing – Cleaning the data and handling missing values.
+3. Exploratory Data Analysis – Understanding customer characteristics and churn patterns.
+4. Feature Engineering – Preparing numerical and categorical variables.
+5. Model Development – Training classification algorithms.
+6. Model Evaluation – Comparing models using performance metrics.
+7. Prediction – Demonstrating customer churn prediction.
+8. Visualization – Presenting analytical results through the dashboard.
+Machine-Learning Algorithms
+Logistic Regression
 
-In this project, it is used to classify customers into churn and non-churn categories.
-8.2 Random Forest Classifier
-Random Forest is an ensemble-learning algorithm that combines multiple decision trees to generate predictions.
+Logistic Regression is a supervised machine-learning algorithm used for binary classification. It estimates the probability of a customer belonging to the churn or non-churn category.
 
-It improves classification by combining the results of several decision trees and can capture complex relationships between customer attributes.
-9. Model Evaluation
-The models are evaluated using the following performance metrics:
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- ROC-AUC
+Random Forest Classifier
 
+Random Forest is an ensemble-learning algorithm that combines multiple decision trees to improve classification performance and identify complex patterns in customer data.
+Model Evaluation
+The implemented models are evaluated using accuracy, precision, recall, F1-score, and ROC-AUC.
+
+The following results were obtained using the synthetic dataset:
+Evaluation Metric	Logistic Regression	Random Forest
+Accuracy	66.70%	67.50%
+Precision	48.09%	48.26%
+Recall	71.75%	44.13%
+F1-score	57.58%	46.10%
+ROC-AUC	73.36%	70.61%
+
+Logistic Regression was selected based on its higher ROC-AUC score.
+
+These results represent experiments conducted on synthetic data and should not be interpreted as real-world model performance.
+Project Architecture
+ChurnIQ consists of two major components:
+
+Frontend: The frontend is developed using HTML, CSS, and JavaScript. It provides an interactive interface for customer analytics, customer information, visualizations, and demonstration churn predictions.
+
+Backend: The backend is developed using Python and FastAPI. It supports dataset preprocessing, machine-learning model training, model evaluation, and prediction requests.
+
+The backend provides API endpoints for checking server status, retrieving model information, and generating predictions.
+Testing
+The project includes unit testing for the data preprocessing module.
+
+The following functionalities are considered for testing:
+- Dashboard loading and navigation.
+- Customer information display.
+- Customer search and filtering.
+- Churn prediction interface.
+- CSV export functionality.
+- Backend health check.
+- Model prediction endpoint.
+- Data preprocessing operations.
+Limitations
+- The dataset is synthetically generated.
+- The frontend currently uses a demonstration scoring mechanism for churn predictions.
+- The frontend is not yet integrated with the Python machine-learning prediction API.
+- The AI Copilot uses predefined local responses rather than a live language model.
+- Model performance has not been validated using real-world customer data.
+Future Enhancements
+- Integrate the frontend with the trained machine-learning backend.
+- Incorporate real-world customer datasets.
+- Add advanced exploratory data analysis.
+- Include confusion matrices and ROC curves.
+- Implement feature-importance analysis.
+- Integrate a database for customer information.
+- Introduce user authentication and authorization.
+- Improve model performance through hyperparameter tuning.
+- Develop a real-time AI-powered customer-retention assistant.
+- Deploy the application on a cloud platform.
+Conclusion
+ChurnIQ demonstrates the application of data analytics, visualization, and machine-learning techniques to the customer churn prediction problem.
+
+By combining an interactive dashboard with a machine-learning pipeline, the project provides an academic demonstration of how customer information can be analysed to identify churn-related patterns and generate predictive insights.
+
+The project establishes a foundation for a customer-retention decision-support system and highlights the importance of data-driven decision-making in modern businesses.
+Project Team
+S. No.	Roll Number	Name
+1	2420030321	Madhu
+2	2420030572	Varda Parnavi
+3	2420030699	Hema
+
+Acknowledgement
+We would like to express our gratitude to our faculty and institution for their guidance and support throughout the development of this project. This project provided us with an opportunity to apply concepts of data analytics, data visualization, Python programming, and machine learning to a practical business problem.
